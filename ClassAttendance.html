@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Attendance</title>
+
+<link rel="stylesheet" href="nebula.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<div class="webpage">
+
+<header class="header">
+    <h1>Harold's Web System</h1>
+    <p>Class Attendance System</p>
+</header>
+
+<nav class="nav">
+    <a href="index.html"><i class="fas fa-house"></i> Home</a>
+        <a href="about.html"><i class="fas fa-circle-info"></i> About</a>
+        <a href="calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+        <a href="login.html"><i class="fas fa-user-astronaut"></i> Login</a>
+        <a href="ClassAttendance.html"><i class="fa-solid fa-address-card"></i> Attendance</a>
+</nav>
+
+<main class="content">
+
+<h2><i class="fas fa-clipboard-user"></i> Class Attendance</h2>
+
+<div class="attendance-wrapper">
+
+    <!-- FORM -->
+    <div class="attendance-form nebula-card">
+        <h3>Add Student</h3>
+
+        <input type="text" id="firstName" placeholder="First Name *">
+        <input type="text" id="middleInitial" maxlength="1" placeholder="Middle Initial">
+        <input type="text" id="lastName" placeholder="Last Name *">
+        <input type="number" id="age" placeholder="Age *">
+        <input type="email" id="email" placeholder="Email *">
+
+        <button id="addStudent">Add Student</button>
+    </div>
+
+    <!-- LIST -->
+    <div class="attendance-list nebula-card">
+        <h3>Attendance List</h3>
+        <ol id="list"></ol>
+    </div>
+
+</div>
+
+</main>
+
+<footer class="footer">
+    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#"><i class="fas fa-envelope"></i> Email</a>
+</footer>
+
+</div>
+
+<script src="ClassAttendance.js"></script>
+</body>
+</html>
